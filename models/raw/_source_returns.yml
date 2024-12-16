@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: returns
+    database: BI_TRAINING_DB
+    schema: RAW
+    quoting:
+      database: true
+    tables:
+      - name: RAW_RETURNS
+        columns:
+          - name: ORDERID
+            data_type: VARCHAR
+          - name: RETURN
+            data_type: VARCHAR

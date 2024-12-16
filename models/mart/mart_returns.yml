@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: mart_returns
+    columns:
+      - name: orderid
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: return
+        description: ""
+        meta:
+          dimension:
+            type: string

@@ -1,0 +1,18 @@
+# example profiles.yml file
+dbt_bi:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('DBT_ACCOUNT') }}"
+      role: "{{ env_var('DBT_ROLE') }}"
+      user: "{{ env_var('DBT_USER') }}"
+      database: "{{ env_var('DBT_DATABASE') }}"
+      warehouse: "{{ env_var('DBT_WAREHOUSE') }}"
+      schema: "{{ env_var('DBT_SCHEMA') }}"
+      private_key_passphrase: "{{ env_var('DBT_PRIVATE_KEY_PASSPHRASE') }}"
+      private_key_path: "{{ env_var('DBT_PRIVATE_KEY_PATH') }}"
+      # password: "abcd1234"
+      connect_timeout: 60
+      threads: 16
+      client_session_keep_alive: False

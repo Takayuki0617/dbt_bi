@@ -1,0 +1,104 @@
+version: 2
+models:
+  - name: dwh_orders
+    columns:
+      - name: rowid
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: orderid
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: shipmode
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: customerid
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: customername
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: customersegment
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: city
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: state
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: countryregion
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: region
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: productid
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: category
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: subcategory
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: productname
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: sales
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: quantity
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: discount
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: profit
+        description: ""
+        meta:
+          dimension:
+            type: number
+      - name: orderdate
+        description: ""
+        meta:
+          dimension:
+            type: date
+      - name: shipdate
+        description: ""
+        meta:
+          dimension:
+            type: date

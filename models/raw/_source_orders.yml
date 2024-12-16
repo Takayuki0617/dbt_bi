@@ -1,0 +1,51 @@
+version: 2
+
+sources:
+  - name: orders
+    database: BI_TRAINING_DB
+    schema: RAW
+    quoting:
+      database: true
+    tables:
+      - name: RAW_ORDERS
+        columns:
+          - name: ROWID
+            data_type: NUMBER
+          - name: ORDERID
+            data_type: VARCHAR
+          - name: ORDERDATE
+            data_type: VARCHAR
+          - name: SHIPDATE
+            data_type: VARCHAR
+          - name: SHIPMODE
+            data_type: VARCHAR
+          - name: CUSTOMERID
+            data_type: VARCHAR
+          - name: CUSTOMERNAME
+            data_type: VARCHAR
+          - name: CUSTOMERSEGMENT
+            data_type: VARCHAR
+          - name: CITY
+            data_type: VARCHAR
+          - name: STATE
+            data_type: VARCHAR
+          - name: COUNTRYREGION
+            data_type: VARCHAR
+          - name: REGION
+            data_type: VARCHAR
+          - name: PRODUCTID
+            data_type: VARCHAR
+          - name: CATEGORY
+            data_type: VARCHAR
+          - name: SUBCATEGORY
+            data_type: VARCHAR
+          - name: PRODUCTNAME
+            data_type: VARCHAR
+          - name: SALES
+            data_type: NUMBER
+          - name: QUANTITY
+            data_type: NUMBER
+          - name: DISCOUNT
+            data_type: NUMBER
+          - name: PROFIT
+            data_type: NUMBER

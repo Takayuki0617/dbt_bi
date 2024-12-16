@@ -1,0 +1,16 @@
+# .gitignore
+.env
+*.log
+.DS_Store
+**/dbt-env/
+**/*-venv/
+target
+dbt_packages
+**/__pycache__/
+.vscode/
+logs/
+.key
+coverage-doc.json
+coverage-test.json
+*.user.yml
+*.ruff_cache/

@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: related_parties
+    database: BI_TRAINING_DB
+    schema: RAW
+    quoting:
+      database: true
+    tables:
+      - name: RAW_RELATED_PARTIES
+        columns:
+          - name: REGION
+            data_type: VARCHAR
+          - name: REGIONMANAGER
+            data_type: VARCHAR

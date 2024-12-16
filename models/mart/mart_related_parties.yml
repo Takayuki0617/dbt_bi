@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: mart_related_parties
+    columns:
+      - name: region
+        description: ""
+        meta:
+          dimension:
+            type: string
+      - name: regionmanager
+        description: ""
+        meta:
+          dimension:
+            type: string
